@@ -20,3 +20,19 @@ body {
 .gems {
     margin: 20px 0px;
 }
+
+#firstgem {
+    background-color: lightcoral;
+}
+
+#secondgem {
+    background-color: lavender;
+}
+
+#thirdgem {
+    background-color: lightpink;
+}
+
+#fourthgem {
+    background-color: lightsteelblue;
+}
