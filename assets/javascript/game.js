@@ -3,6 +3,16 @@
 // Randomly-generated goal number, check the player score against this.
 // Score remains, tally of wins AND losses.
 
+// To have a random BG each time the page loads, as well as change when a new game is started, found on Stack Overflow:
+// https://stackoverflow.com/questions/15231812/random-background-images-css3
+// Combined with a method to use it in jQuery
+function pickBG() {
+    let bgCount = 9
+    let bgPick = Math.ceil(Math.random() * bgCount);
+    $('body').css('background-image', 'url(assets/images/stevenBG' + bgPick + '.jpg)');
+    console.log("Background number "+bgPick);
+}
+
 let firstGem;
 let secondGem;
 let thirdGem;
@@ -39,17 +49,21 @@ function setPoints(min, max) {
 
 function scoreCheck() {
     if(playerScore === scoreGoal) {
+        alert ("So you escaped. No matter, I'll get you yet!")
         console.log("Victory")
         winTally++;
         $("#wins").text(winTally);
         setTimeout(newGame, 5000);
+        setTimeout(pickBG, 5000);
     };
     
     if(playerScore > scoreGoal) {
+        alert ("What a bunch of clods. Guess you'll be sticking around.")
         console.log("Whoopsie")
         loseTally++;
         $("#losses").text(loseTally);
         setTimeout(newGame, 5000);
+        setTimeout(pickBG, 5000);
     };
 };
 
@@ -81,5 +95,5 @@ $("#fourthGem").click(function() {
     scoreCheck();
 });
 
-
+pickBG();
 newGame();
