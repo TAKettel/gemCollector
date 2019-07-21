@@ -1,4 +1,4 @@
-Gem Collector
+### Gem Collector
 
 A small project to showcase some capabilities of jQuery and CSS.
 
