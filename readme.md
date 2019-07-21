@@ -1,3 +1,7 @@
-Unit 4 Game: Gem Collection.
+Gem Collector
 
-A small game, coded primarily through jQuery, to randomize game pieces and goal number.
+A small project to showcase some capabilities of jQuery and CSS.
+
+At the start of each game, a random goal number is set, as well as random point values for each of the four characters on screen. If the goal number is met, a congratulatory alert is shown, and a new game starts after a few moments. If the goal number is passed, a different alert is displayed, but a new game starts automatically. Wins and losses are stored for the current visit.
+
+In addition, a random background image is chosen for each game, and resets when a new game starts, no page refresh required.

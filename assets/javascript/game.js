@@ -8,7 +8,6 @@
 // Combined with a method to use it in jQuery
 function pickBG() {
     let bgCount = 9
-    let bgPick = Math.ceil(Math.random() * bgCount);
     $('body').css('background-image', 'url(assets/images/stevenBG' + bgPick + '.jpg)');
     console.log("Background number "+bgPick);
 }
