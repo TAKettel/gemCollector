@@ -1,6 +1,6 @@
-### Gem Collector
+# Gem Collector
 
-A small project to showcase some capabilities of jQuery and CSS, built on Bootstrap's Grid Layout.
+A small project to showcase some capabilities of **jQuery** and **CSS**, built on **Bootstrap's Grid Layout**.
 
 ![gamescreen](https://user-images.githubusercontent.com/46268838/61596970-ba148e00-abcf-11e9-9325-e83e32bb0352.png)
 
